@@ -28,7 +28,7 @@ public final class Round {
     public List<GameEvent> events() {
         return List.copyOf(events);
     }
-    
+
     public void enqueue(ActionIntent action) {
         throw new UnsupportedOperationException("TODO: validar presupuesto y encolar accion");
     }
