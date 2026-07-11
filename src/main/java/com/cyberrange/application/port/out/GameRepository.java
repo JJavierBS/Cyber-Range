@@ -1,0 +1,16 @@
+package com.cyberrange.application.port.out;
+
+import com.cyberrange.domain.model.Game;
+import com.cyberrange.domain.model.GameId;
+
+import java.util.Optional;
+
+/**
+ * Puerto de salida: persistencia de partidas.
+ */
+public interface GameRepository {
+
+    Game save(Game game);
+
+    Optional<Game> findById(GameId gameId);
+}
